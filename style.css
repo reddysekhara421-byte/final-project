@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f7fb;
+}
+
+/* LOGIN */
+#login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1769aa;
+}
+
+.login-box {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #333;
+}
+
+.login-box h1 {
+    color: #1769aa;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #1769aa;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginResult {
+    color: red;
+}
+
+/* WEBSITE */
+#website {
+    display: none;
+}
+
+header {
+    background: #1769aa;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav button {
+    padding: 10px;
+    margin: 4px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.page {
+    display: none;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#home {
+    display: block;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cards div {
+    background: #e3f2fd;
+    padding: 25px;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    border-radius: 8px;
+}
+
+.course {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+}
+
+.course span {
+    background: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+progress {
+    width: 70%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #1769aa;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1769aa;
+    color: white;
+}
+
+@media(max-width:600px) {
+    nav button {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="login">
+    <div class="login-box">
+        <h1>Student LMS</h1>
+        <p>Student Learning Management System</p>
+
+        <input type="text" id="studentId" placeholder="Student ID">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="loginUser()">Login</button>
+
+        <p id="loginResult"></p>
+
+        <small>Demo ID: 2500030422 | Password: 1234</small>
+    </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="website">
+
+<header>
+    <h1>Student Learning Management System</h1>
+
+    <nav>
+        <button onclick="show('home')">Home</button>
+        <button onclick="show('profile')">Profile</button>
+        <button onclick="show('courses')">Courses</button>
+        <button onclick="show('materials')">Materials</button>
+        <button onclick="show('assignments')">Assignments</button>
+        <button onclick="show('quiz')">Quiz</button>
+        <button onclick="show('attendance')">Attendance</button>
+        <button onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<main>
+
+<section id="home" class="page">
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+        <div>Courses<br><b>5</b></div>
+        <div>Assignments<br><b>8</b></div>
+        <div>Quizzes<br><b>6</b></div>
+        <div>Attendance<br><b>85%</b></div>
+    </div>
+
+    <h3>Learning Progress</h3>
+
+    <p>HTML & CSS</p>
+    <progress value="80" max="100"></progress> 80%
+
+    <p>JavaScript</p>
+    <progress value="70" max="100"></progress> 70%
+
+    <p>Artificial Intelligence</p>
+    <progress value="60" max="100"></progress> 60%
+</section>
+
+<section id="profile" class="page">
+    <h2>Student Profile</h2>
+    <p><b>Name:</b> M REDDI SEKHARA</p>
+    <p><b>Student ID:</b> 2500030422</p>
+    <p><b>Batch:</b> 4</p>
+    <p><b>Program:</b> Computer Science</p>
+</section>
+
+<section id="courses" class="page">
+    <h2>Courses</h2>
+
+    <div class="course">
+        <h3>Web Development</h3>
+        <p>Code: WD101 | Credits: 3</p>
+        <span>Active</span>
+    </div>
+
+    <div class="course">
+        <h3>Java Programming</h3>
+        <p>Code: JAVA101 | Credits: 3</p>
+        <span>Active</span>
+    </div>
+
+    <div class="course">
+        <h3>Artificial Intelligence</h3>
+        <p>Code: AI101 | Credits: 4</p>
+        <span>Active</span>
+    </div>
+</section>
+
+<section id="materials" class="page">
+    <h2>Study Materials</h2>
+    <ul>
+        <li>HTML & CSS Notes</li>
+        <li>JavaScript Notes</li>
+        <li>Java Programming Notes</li>
+        <li>AI Study Material</li>
+    </ul>
+</section>
+
+<section id="assignments" class="page">
+    <h2>Assignments</h2>
+
+    <table>
+        <tr>
+            <th>Assignment</th>
+            <th>Course</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Web Development Project</td>
+            <td>Web Development</td>
+            <td>Submitted</td>
+        </tr>
+        <tr>
+            <td>Java Program</td>
+            <td>Java</td>
+            <td>Pending</td>
+        </tr>
+    </table>
+</section>
+
+<section id="quiz" class="page">
+    <h2>Quick Quiz</h2>
+
+    <p>Which language makes web pages interactive?</p>
+
+    <button onclick="answer('HTML')">HTML</button>
+    <button onclick="answer('JavaScript')">JavaScript</button>
+    <button onclick="answer('CSS')">CSS</button>
+
+    <p id="result"></p>
+</section>
+
+<section id="attendance" class="page">
+    <h2>Attendance</h2>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Attendance</th>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>90%</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>Artificial Intelligence</td>
+            <td>80%</td>
+        </tr>
+    </table>
+</section>
+
+</main>
+
+<footer>
+    <p>Student LMS | HTML | CSS | JavaScript</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
